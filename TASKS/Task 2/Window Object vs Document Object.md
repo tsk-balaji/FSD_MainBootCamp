@@ -10,4 +10,3 @@
 |We can not access windows objects properties inside the document.|We can access document object properties inside the window.|
 | logically:  document:{ properties} |logically: window:{document:{properties}}|
 |Example: document.title will return the title of the document|Example: window.document.title will return the title of the document.|
-
