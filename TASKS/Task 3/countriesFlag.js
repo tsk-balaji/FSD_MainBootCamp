@@ -6,7 +6,9 @@
     const obj = JSON.parse(this.response);
     for (let i = 0; i < obj.length; i++) {
       //flags of the countries
-      console.log(obj[i].flags.png);   //flags
+      // console.log(obj[i].name.official)
+      // console.log(obj[i].capital);
+      console.log(obj[i].flags.svg);
       console.log(obj[i].region);      //region
       console.log(obj[i].subregion);   //subregion
       console.log(obj[i].population);  //population
