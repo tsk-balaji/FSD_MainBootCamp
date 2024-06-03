@@ -1,0 +1,41 @@
+{
+    "name": { 
+        "firstName"     : "Balaji" ,
+        "surName"       : "T"
+          },
+    "dob"               : "05/07/2001",
+    "contactDetails":{
+        "email"         :"tskbalaji15@gmail.com",
+        "Phn"           :"8248749449"
+    },
+    "education"         :{
+        "school"        :{
+            "Name"      :"Amrita Vidyalayam Senior Secondary School",
+            "place"     :"Ettimadai,Coimbatore",
+            "syllabus"  :"CBSE",
+            "CGPA"      :"9.4"
+        },
+        "underGraduate" :{
+            "Name"      :"PSG College of Arts and Science",
+            "place"     :"Coimbatore",
+            "course"    :"BSc Physics",
+            "percentage":"72",
+            "passedOut" : "2021"
+        },
+        "postGraduate"  :{
+            "Name"      : "Chandigarh University",
+            "place"     : "Chandigarh",
+            "course"    : "MCA",
+            "percentage": "81.5",
+            "passedOut" : "2024"
+        }
+    },
+    "experience"        : {
+        "expInYrs"      : "2 Years and 8 Months",
+        "currentCompany": "Infosy Ltd",
+        "currentJobRole": "Senior System Associate"
+    },
+    "skills"            : "MERN Stack , Python , Mainframe",
+    "locationPrefences" : "Chennai, Bangalore",
+    "hobby"             : "Bike ride , Movies"   
+}
