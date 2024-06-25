@@ -1,0 +1,11 @@
+.square {
+  height: 100px;
+  width: 100px;
+  background-color: #1ae1eb;
+}
+
+.square:hover {
+  outline: 2px solid black;
+
+  background-color: rgb(154, 151, 151);
+}
