@@ -1,0 +1,107 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #ffb703;
+}
+
+.event {
+  padding: 20px;
+  margin-top: 30px;
+  width: 500px;
+  height: 60px;
+  color: white;
+  border-radius: 5px;
+  background-color: #240046;
+  font-weight: bold;
+  font-size: large;
+  border-color: #219ebc;
+  box-shadow: 0px 7px 7px 7px #342e39;
+}
+
+.rounded-circle {
+  height: 300px;
+  width: 300px;
+  position: flex-start;
+  margin-left: 50px;
+}
+
+.card {
+  position: fixed;
+  top: 140px;
+  height: 400px;
+  width: 1000px;
+  border-radius: 6px;
+  background-color: #240046;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.name {
+  height: 30px;
+  width: 300px;
+  border-radius: 7px;
+  outline: black;
+  display: block;
+  text-align: center;
+}
+
+.mobileNo {
+  height: 30px;
+  width: 300px;
+  border-radius: 7px;
+  outline: black;
+  display: block;
+  text-align: center;
+}
+.noOfSeats {
+  height: 30px;
+  width: 300px;
+  border-radius: 7px;
+  outline: black;
+  display: block;
+  text-align: center;
+}
+.nameOfAttendee {
+  height: 30px;
+  width: 300px;
+  border-radius: 7px;
+  outline: black;
+  display: block;
+  text-align: center;
+}
+
+.mail {
+  height: 30px;
+  width: 300px;
+  border-radius: 7px;
+  outline: black;
+  display: block;
+  text-align: center;
+}
+
+.bookingDetailsName {
+  display: flex;
+  margin-left: 100px;
+  color: white;
+  flex-flow: column;
+  margin-bottom: 40px;
+  row-gap: 30px;
+  align-items: end;
+}
+
+.bookingDetails {
+  display: flex;
+  flex-flow: column;
+  position: static;
+  margin-left: 10px;
+  margin-bottom: 40px;
+  row-gap: 25px;
+}
+
+.form-select-sm {
+  height:30px;
+  width:300px;
+}
