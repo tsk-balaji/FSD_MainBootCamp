@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="./surveyForm.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="surveyForm">SurveyForm</div>
+    <div class="card-body mb-3">
+      <form>
+        <div class="container-fluid">
+          <div>
+            <div>
+              <div class="fw-bold col-lg-12 pb-2"></div>
+                Name<span style="color: red">*</span>
+              </div>
+              <input
+                type="email"
+                class="col-sm-5"
+                id="firstName"
+                placeholder="First Name"
+              />
+              <input
+                type="email"
+                class="col-sm-5"
+                id="lastName"
+                placeholder="Last Name"
+                style="display: inline"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="firstName" class="col-sm-5 fw-light">
+                First name
+              </label>
+              <label for="lastName" class="col-sm-5 fw-light">Last name</label>
+            </div>
+            <div>
+              <div class="pt-4">
+                <label for="mailId" class="fw-bold col-lg-12 pb-2"
+                  >Email address<span style="color: red">*</span></label
+                >
+                <input
+                  type="email"
+                  class="col-sm-10"
+                  id="mailId"
+                  placeholder="username@domain.com"
+                />
+              </div>
+              <div class="pt-4">
+                <label for="yourExp" class="fw-bold col-lg-12"
+                  >Your Experience<span style="color: red">*</span></label
+                >
+                <div class="rating-css">
+                  <div class="star-icon col-sm-6">
+                    <input type="radio" name="rating1" id="rating1" />
+                    <label for="rating1" class="fa fa-star"></label>
+                    <input type="radio" name="rating1" id="rating2" />
+                    <label for="rating2" class="fa fa-star"></label>
+                    <input type="radio" name="rating1" id="rating3" />
+                    <label for="rating3" class="fa fa-star"></label>
+                    <input type="radio" name="rating1" id="rating4" />
+                    <label for="rating4" class="fa fa-star"></label>
+                    <input type="radio" name="rating1" id="rating5" />
+                    <label for="rating5" class="fa fa-star"></label>
+                  </div>
+                </div>
+              </div>
+              <label for="rating-css" class="fw-lighter col-lg-12 pb-5"
+                >Overall, how would rate your experience with us?<span
+                  style="color: red"
+                  >*</span
+                ></label
+              >
+              <div class="fw-bold col-lg-12">
+                How satisfied are you with<span style="color: red">*</span>
+              </div>
+              <table
+                class="table table-striped table-sm"
+                style="text-align: center"
+              >
+                <thead>
+                  <tr>
+                    <th scope="col"></th>
+                    <th scope="col" class="fw-normal">Very Unsatisfied</th>
+                    <th scope="col" class="fw-normal">Unsatisfied</th>
+                    <th scope="col" class="fw-normal">Neutral</th>
+                    <th scope="col" class="fw-normal">Satisfied</th>
+                    <th scope="col" class="fw-normal">Very Satisfied</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row" style="text-align: left" class="fw-normal">
+                      Purchase
+                    </th>
+                    <td>
+                      <input type="radio" name="Purchase" id="Unsatisfied" />
+                    </td>
+                    <td>
+                      <input
+                        type="radio"
+                        name="Purchase"
+                        id="Very Unsatisfied"
+                      />
+                    </td>
+                    <td><input type="radio" name="Purchase" id="Neutral" /></td>
+                    <td>
+                      <input type="radio" name="Purchase" id="Satisfied" />
+                    </td>
+                    <td>
+                      <input type="radio" name="Purchase" id="Very Satisfied" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" style="text-align: left" class="fw-normal">
+                      Service
+                    </th>
+                    <td>
+                      <input type="radio" name="Service" id="Unsatisfied" />
+                    </td>
+                    <td>
+                      <input
+                        type="radio"
+                        name="Service"
+                        id="Very Unsatisfied"
+                      />
+                    </td>
+                    <td><input type="radio" name="Service" id="Neutral" /></td>
+                    <td>
+                      <input type="radio" name="Service" id="Satisfied" />
+                    </td>
+                    <td>
+                      <input type="radio" name="Service" id="Very Satisfied" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" style="text-align: left" class="fw-normal">
+                      Company Overall
+                    </th>
+                    <td>
+                      <input
+                        type="radio"
+                        name="Company Overall"
+                        id="Unsatisfied"
+                      />
+                    </td>
+                    <td>
+                      <input
+                        type="radio"
+                        name="Company Overall"
+                        id="Very Unsatisfied"
+                      />
+                    </td>
+                    <td>
+                      <input type="radio" name="Company Overall" id="Neutral" />
+                    </td>
+                    <td>
+                      <input
+                        type="radio"
+                        name="Company Overall"
+                        id="Satisfied"
+                      />
+                    </td>
+                    <td>
+                      <input
+                        type="radio"
+                        name="Company Overall"
+                        id="Very Satisfied"
+                      />
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="fw-bold col-lg-12 pt-4">
+              How likely are you to<span style="color: red">*</span>
+            </div>
+            <table
+              class="table table-striped table-sm"
+              style="text-align: center"
+            >
+              <thead>
+                <tr>
+                  <th scope="col"></th>
+                  <th scope="col" class="fw-normal">Very Unlikely</th>
+                  <th scope="col" class="fw-normal">Unlikely</th>
+                  <th scope="col" class="fw-normal">Neutral</th>
+                  <th scope="col" class="fw-normal">Likely</th>
+                  <th scope="col" class="fw-normal">Very Likely</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th
+                    scope="row"
+                    style="text-align: left; width: 300px"
+                    class="fw-normal"
+                  >
+                    Buy from us again
+                  </th>
+                  <td>
+                    <input type="radio" name="buyAgain" id="Unsatisfied" />
+                  </td>
+                  <td>
+                    <input type="radio" name="buyAgain" id="Very Unsatisfied" />
+                  </td>
+                  <td><input type="radio" name="buyAgain" id="Neutral" /></td>
+                  <td><input type="radio" name="buyAgain" id="Satisfied" /></td>
+                  <td>
+                    <input type="radio" name="buyAgain" id="Very Satisfied" />
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row" style="text-align: left" class="fw-normal">
+                    Recommend our product to others
+                  </th>
+                  <td>
+                    <input
+                      type="radio"
+                      name="RecommendProduct"
+                      id="Unsatisfied"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="radio"
+                      name="RecommendProduct"
+                      id="Very Unsatisfied"
+                    />
+                  </td>
+                  <td>
+                    <input type="radio" name="RecommendProduct" id="Neutral" />
+                  </td>
+                  <td>
+                    <input
+                      type="radio"
+                      name="RecommendProduct"
+                      id="Satisfied"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="radio"
+                      name="RecommendProduct"
+                      id="Very Satisfied"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row" style="text-align: left" class="fw-normal">
+                    Recommend our Company to others
+                  </th>
+                  <td>
+                    <input
+                      type="radio"
+                      name="RecommendCompany"
+                      id="Unsatisfied"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="radio"
+                      name="RecommendCompany"
+                      id="Very Unsatisfied"
+                    />
+                  </td>
+                  <td>
+                    <input type="radio" name="RecommendCompany" id="Neutral" />
+                  </td>
+                  <td>
+                    <input
+                      type="radio"
+                      name="RecommendCompany"
+                      id="Satisfied"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="radio"
+                      name="RecommendCompany"
+                      id="Very Satisfied"
+                    />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div>
+            <div class="fw-bold col-lg-12 pt-4">
+              Additional Comments or Suggestions<span style="color: red"
+                >*</span
+              >
+            </div>
+            <textarea input="text" rows="7" cols="135" class="mb-5"> </textarea>
+
+            <button type="button" class="btn btn-primary col-2">Submit</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

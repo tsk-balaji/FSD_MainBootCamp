@@ -1,29 +1,40 @@
-form {
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  row-gap: 10px;
+}
+
+.surveyForm {
+  font-weight: bolder;
+  text-align: center;
+  font-size: xx-large;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background: linear-gradient(
+    to right,
+    #2e0537,
+    #2f3c77,
+    #0073af,
+    #00abd6,
+    #12e4eb
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.card-body {
   background-color: #fff;
-  max-width: 100%;
+  max-width: 95%;
   margin: 30px auto;
   padding: 30px 20px;
   box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
 }
-
-.name {
-  height: 30px;
-  width: 30%;
-  border-radius: 7px;
-  outline: black;
-  display: inline-block;
-}
-
-.mail {
-  height: 30px;
-  width: 50%;
-  border-radius: 7px;
-  outline: black;
-  display: inline-block;
-}
-
-.body {
-  display: flex;
+.valueHeadings {
+  font-weight: 600;
+  font-size: large;
+  padding-bottom: 15px;
 }
 
 .rating-css {
@@ -39,7 +50,6 @@ form {
   font-weight: 800;
   text-align: left;
   text-transform: uppercase;
-  padding: 20px 0;
 }
 
 .rating-css input {
@@ -58,14 +68,4 @@ form {
 .rating-css label:active {
   transform: scale(0.8);
   transition: 0.3s ease;
-}
-
-.table {
-  row-gap: 50px;
-}
-
-.submit {
-  background-color: aqua;
-  border-radius: 6px;
-  box-shadow: 2px;
 }
