@@ -79,3 +79,19 @@ equalBtn.addEventListener("click", () => {
 backspaceBtn.addEventListener("click", () => {
   currDisplay.value = currDisplay.value.slice(0, -1);
 });
+
+document.addEventListener("keydown", (event) => {
+  const key = event.key;
+  if ((key >= 0 && key <= 9) || key === ".") {
+    appendNumber(key);
+  } else if (key === "+" || key === "-" || key === "*" || key === "/") {
+    chooseOperation(key);
+  } else if (key === "Enter") {
+    compute();
+    prevDisplay.innerText = "";
+  } else if (key === "Backspace") {
+    currDisplay.value = currDisplay.value.slice(0, -1);
+  } else {
+    alert("Only numbers and operations are allowed");
+  }
+});
