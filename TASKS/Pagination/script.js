@@ -75,7 +75,7 @@ function prevSet() {
   const computedStyle2 = window.getComputedStyle(list[0]);
   const displayValue2 = computedStyle2.getPropertyValue("display");
   if (displayValue2 !== "inline-block") {
-    if (current_page > 1) {
+    if (current_page > 0) {
       for (l of list) {
         l.classList.remove("active");
       }
@@ -90,7 +90,7 @@ function nextSet() {
   const computedStyle1 = window.getComputedStyle(list[99]);
   const displayValue1 = computedStyle1.getPropertyValue("display");
   if (displayValue1 !== "inline-block") {
-    if (current_page < 100) {
+    if (current_page < 99) {
       for (l of list) {
         l.classList.remove("active");
       }
