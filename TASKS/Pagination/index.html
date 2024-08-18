@@ -8,12 +8,78 @@
   </head>
   <body>
     <div class="container">
-      <div class="data"></div>
+      <h1 id="title" class="title" style="color: white; padding-bottom: 15px">
+        Calculator
+      </h1>
+      <p
+        id="description"
+        class="description"
+        style="color: white; padding-bottom: 15px"
+      >
+        Personal details will be rendered as per the Id clicked in the
+        pagination
+      </p>
+      <div class="data">
+        <div
+          class="table-responsive"
+          style="color: white; text-align: center; padding-top: 15%"
+          ;
+        >
+          Please click on the desired Id below for their details
+        </div>
+      </div>
+      <div
+        class="table-responsive"
+        style="
+          color: white;
+          text-align: center;
+          padding-top: 150px;
+          display: none;
+        "
+        ;
+      >
+        Please click on the desired Id below for their details
+        <table id="table" class="table table-bordered" style="display: none">
+          <!-- Your table content goes here -->
+          <thead>
+            <tr>
+              <th>Column 1</th>
+              <th>Column 2</th>
+              <th>
+                <!-- Add more columns as needed -->
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Data 1</td>
+              <td>Data 2</td>
+              <!-- Add more rows and data -->
+            </tr>
+          </tbody>
+        </table>
+      </div>
       <div class="pagination">
+        <div
+          id="buttons"
+          class="d-flex justify-content-center"
+          onclick="prevSet()"
+          style="display: none"
+        >
+          ⇤
+        </div>
+        <div
+          id="buttons"
+          class="d-flex justify-content-center"
+          onclick="backBtn()"
+          style="display: none"
+        >
+          prev
+        </div>
         <button class="btn3" onclick="prevSet()">⇤</button>
         <button class="btn1" onclick="backBtn()">prev</button>
         <ul>
-          <li class="link active" value="1">1</li>
+          <li class="link" value="1">1</li>
           <li class="link" value="2">2</li>
           <li class="link" value="3">3</li>
           <li class="link" value="4">4</li>
@@ -119,5 +185,6 @@
       </div>
     </div>
     <script src="script.js"></script>
+    <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
   </body>
 </html>
