@@ -56,25 +56,21 @@ function clickedforWeather(event) {
   var capitalName =
     document.getElementsByClassName("capitalName")[id - 1].innerText;
   capitalName = capitalName.split(":")[1].trim();
-  console.log(capitalName);
   var countryCode =
     document.getElementsByClassName("countryCode")[id - 1].innerText;
   countryCode = countryCode.split(":")[1].trim();
-  console.log(countryCode);
-  var geoUrl = `http://api.openweathermap.org/geo/1.0/direct?q=${capitalName},,${countryCode}&limit=1&appid=${apiKey}`;
+  var geoUrl = `https://api.openweathermap.org/geo/1.0/direct?q=${capitalName},,${countryCode}&limit=1&appid=${apiKey}`;
   // Fetch geolocation data
   fetch(geoUrl)
     .then((res) => res.json())
     .then((geoData) => {
       var lat = geoData[0].lat;
       var lon = geoData[0].lon;
-      var weatherUrl = `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}`;
-      console.log(weatherUrl);
+      var weatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}`;
       // Fetch weather data
       fetch(weatherUrl)
         .then((res) => res.json())
         .then((weatherData) => {
-          console.log(weatherData);
           var temp = weatherData.main.temp;
           temp -= 273.15;
           var weather = weatherData.weather[0].description.toUpperCase();
