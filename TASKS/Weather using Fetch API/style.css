@@ -1,0 +1,30 @@
+body {
+  display: flex;
+  flex-flow: row wrap;
+  row-gap: 20px;
+  column-gap: 20px;
+  justify-content: space-around;
+  background-image: linear-gradient(grey, white);
+}
+
+.card {
+  background-image: linear-gradient(black, grey, white);
+  padding: 0;
+  margin: 0;
+}
+.card2 {
+  padding: 10px 10px 10px 10px;
+  display: flex inline-block;
+  justify-content: center;
+  align-items: center;
+}
+
+.countryName {
+  padding-top: 10px;
+  background-color: black;
+  color: white;
+  height: 2.5rem;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
