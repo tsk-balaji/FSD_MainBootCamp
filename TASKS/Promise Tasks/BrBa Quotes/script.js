@@ -10,10 +10,6 @@ function fetchQuote() {
       authorDiv.innerText = "-" + data[0].author;
       quoteDiv.appendChild(authorDiv);
       document.body.appendChild(quoteDiv);
-      console.log(data[0].quote);
-      console.log(data[0].author);
-      console.log(authorDiv);
-      console.log(quoteDiv);
     })
     .catch((error) => {
       console.error("Error fetching quote:", error);

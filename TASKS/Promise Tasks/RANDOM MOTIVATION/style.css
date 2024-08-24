@@ -7,25 +7,22 @@
 
 body {
   display: flex;
-  background-image: url("Breaking\ Bad\ Quote\ Background\ Image.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: top;
   flex-direction: column;
   align-content: center;
+  background-color: black;
   background-size: 100% 100%;
 }
 
-.quote {
-  width: 1210px;
-  height: 80px;
+.advice {
+  width: 80%;
+  height: 30%;
   font-size: large;
-  background-color: rgb(173, 225, 236);
+  outline: 0.7rem double lightgoldenrodyellow;
   position: fixed;
-  bottom: 0;
+  top: 35%;
   text-align: center;
   align-items: center;
   justify-content: center;
-  color: white;
-  -webkit-text-stroke: 1px #fff;
+  color: rgb(212, 204, 50);
+  -webkit-text-stroke: 0.2px #fff;
 }
