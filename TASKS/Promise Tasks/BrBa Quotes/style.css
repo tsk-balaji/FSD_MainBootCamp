@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+body {
+  display: flex;
+  background-image: url("Breaking\ Bad\ Quote\ Background\ Image.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  background-size: 100% 100%;
+}
+
+.quote {
+  width: 1210px;
+  height: 80px;
+  font-size: large;
+  background-color: rgb(173, 225, 236);
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  -webkit-text-stroke: 1px #fff;
+}
