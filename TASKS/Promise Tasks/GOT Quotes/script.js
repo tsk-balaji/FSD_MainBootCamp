@@ -1,5 +1,5 @@
-function fetchAdvice() {
-  fetch("https://api.gameofthronesquotes.xyz/v1/random")
+async function fetchAdvice() {
+  await fetch("https://api.gameofthronesquotes.xyz/v1/random")
     .then((response) => response.json())
     .then((data) => {
       var sentence = data.sentence;

@@ -1,5 +1,5 @@
-function fetchQuote() {
-  fetch("https://api.breakingbadquotes.xyz/v1/quotes/")
+async function fetchQuote() {
+  await fetch("https://api.breakingbadquotes.xyz/v1/quotes/")
     .then((response) => response.json())
     .then((data) => {
       const quoteDiv = document.createElement("div");
