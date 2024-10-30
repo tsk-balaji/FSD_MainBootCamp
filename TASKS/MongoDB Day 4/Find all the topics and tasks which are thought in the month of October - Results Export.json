@@ -1,0 +1,54 @@
+[{
+  "Scheduled_Date": "2024-10-11",
+  "SessionName": "Database- Day -1: MySQL",
+  "Topics_Covered": [
+    "Introduction to database",
+    "what is mysql?",
+    "intro to mysql engines",
+    "basic queries - create db, table",
+    "insert, update, alter",
+    "select - where clause, distinct, group by, order by, offset, limit"
+  ]
+},
+{
+  "Scheduled_Date": "2024-10-12",
+  "SessionName": "Database- Day -2: MySQL",
+  "Topics_Covered": [
+    "Normalization, select queries, joins",
+    "DB model design",
+    "Intro to MongoDB & installation of Mongodb"
+  ]
+},
+{
+  "Scheduled_Date": "2024-10-15",
+  "SessionName": "Database- Day -3: MongoDB",
+  "Topics_Covered": [
+    "Why mongodb?",
+    "What is document?",
+    "What is collection?",
+    "Mongodb vs MySQL",
+    "creation of database, collections, documents",
+    "find - query & projection",
+    "use of operators in find() query"
+  ]
+},
+{
+  "Scheduled_Date": "2024-10-16",
+  "SessionName": "Database- Day -4: MongoDB",
+  "Topics_Covered": [
+    "basic cursor methods - map, toArray, pretty, forEach, limit, count, sort",
+    "Aggregation",
+    "Server-side vs Client-side rendering"
+  ]
+},
+{
+  "Scheduled_Date": "2024-10-18",
+  "SessionName": "Nodejs- Day -1: Nodejs",
+  "Topics_Covered": [
+    "What is nodejs?",
+    "Npm packages",
+    " - In build",
+    " - Third party",
+    " - Custom"
+  ]
+}]
