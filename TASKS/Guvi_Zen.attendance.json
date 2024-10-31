@@ -1,0 +1,72 @@
+[
+  {
+    "_id": { "$oid": "669bf09d716d0aea997f2b62" },
+    "id": 1,
+    "studentId": 1,
+    "sessionId": 1,
+    "sessionType": "Road Map",
+    "sessionName": "Database- Day -1: MySQL",
+    "isPresent": true,
+    "isTaskSubmissionNeeded": true,
+    "noOfPendingTasks": 1,
+    "createdDate": "2024-07-11T00:00:00.000Z",
+    "updatedDate": "2024-07-11T08:27:53.000Z",
+    "usersAttended": [1, 2, 3, 4, 5]
+  },
+  {
+    "_id": { "$oid": "669bf09d716d0aea997f2b63" },
+    "id": 2,
+    "studentId": 2,
+    "sessionId": 2,
+    "sessionType": "Road Map",
+    "sessionName": "Database- Day -1: MySQL",
+    "isPresent": true,
+    "isTaskSubmissionNeeded": true,
+    "noOfPendingTasks": 0,
+    "createdDate": "2024-07-11T00:00:00.000Z",
+    "updatedDate": "2024-07-11T08:27:53.000Z",
+    "usersAttended": [1, 2, 3, 4]
+  },
+  {
+    "_id": { "$oid": "669bf09d716d0aea997f2b64" },
+    "id": 3,
+    "studentId": 3,
+    "sessionId": 3,
+    "sessionType": "Road Map",
+    "sessionName": "Database- Day -1: MySQL",
+    "isPresent": true,
+    "isTaskSubmissionNeeded": true,
+    "noOfPendingTasks": 1,
+    "createdDate": "2024-07-11T00:00:00.000Z",
+    "updatedDate": "2024-07-11T08:27:53.000Z",
+    "usersAttended": [1, 2, 3, 5]
+  },
+  {
+    "_id": { "$oid": "669bf09d716d0aea997f2b65" },
+    "id": 4,
+    "studentId": 4,
+    "sessionId": 4,
+    "sessionType": "Road Map",
+    "sessionName": "Database- Day -1: MySQL",
+    "isPresent": true,
+    "isTaskSubmissionNeeded": true,
+    "noOfPendingTasks": 1,
+    "createdDate": "2024-07-11T00:00:00.000Z",
+    "updatedDate": "2024-07-11T08:27:53.000Z",
+    "usersAttended": [1, 2, 4, 5]
+  },
+  {
+    "_id": { "$oid": "669bf09d716d0aea997f2b66" },
+    "id": 5,
+    "studentId": 5,
+    "sessionId": 5,
+    "sessionType": "Road Map",
+    "sessionName": "Database- Day -1: MySQL",
+    "isPresent": true,
+    "isTaskSubmissionNeeded": true,
+    "noOfPendingTasks": 1,
+    "createdDate": "2024-07-11T00:00:00.000Z",
+    "updatedDate": "2024-07-11T08:27:53.000Z",
+    "usersAttended": [1, 4, 5]
+  }
+]

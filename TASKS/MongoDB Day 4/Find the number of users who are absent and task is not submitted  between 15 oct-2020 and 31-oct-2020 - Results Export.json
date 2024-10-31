@@ -1,0 +1,73 @@
+[{
+  "sessionId": 1,
+  "usersAttended": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "notAttendedUsers": [],
+  "notAttendedAndSumittedEither": []
+},
+{
+  "sessionId": 2,
+  "usersAttended": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "notAttendedUsers": [
+    5
+  ],
+  "notAttendedAndSumittedEither": [
+    5
+  ]
+},
+{
+  "sessionId": 3,
+  "usersAttended": [
+    1,
+    2,
+    3,
+    5
+  ],
+  "notAttendedUsers": [
+    4
+  ],
+  "notAttendedAndSumittedEither": [
+    4
+  ]
+},
+{
+  "sessionId": 4,
+  "usersAttended": [
+    1,
+    2,
+    4,
+    5
+  ],
+  "notAttendedUsers": [
+    3
+  ],
+  "notAttendedAndSumittedEither": [
+    3
+  ]
+},
+{
+  "sessionId": 5,
+  "usersAttended": [
+    1,
+    4,
+    5
+  ],
+  "notAttendedUsers": [
+    2,
+    3
+  ],
+  "notAttendedAndSumittedEither": [
+    2,
+    3
+  ]
+}]
