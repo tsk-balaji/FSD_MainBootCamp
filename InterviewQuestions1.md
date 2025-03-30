@@ -161,3 +161,188 @@
     * **Answer:** Indexing, using appropriate query operators, limiting results, using projections, and avoiding `$where` clauses.
 
 2.  **Question:** Explain how sharding and replication improve MongoDB's performance and availability.
+
+
+
+
+
+**Coding Questions (MERN Stack Interview - 4 Years Experience)**
+
+**React:**
+
+1.  **Question:** Implement a simple to-do list component in React using hooks. Include functionality to add new tasks, toggle task completion, and delete tasks.
+    ```jsx
+    import React, { useState } from 'react';
+
+    function TodoList() {
+      const [todos, setTodos] = useState([]);
+      const [newTask, setNewTask] = useState('');
+
+      const handleAddTask = () => {
+        if (newTask.trim() !== '') {
+          setTodos([...todos, { id: Date.now(), text: newTask, completed: false }]);
+          setNewTask('');
+        }
+      };
+
+      const handleToggleComplete = (id) => {
+        setTodos(todos.map(todo =>
+          todo.id === id ? { ...todo, completed: !todo.completed } : todo
+        ));
+      };
+
+      const handleDeleteTask = (id) => {
+        setTodos(todos.filter(todo => todo.id !== id));
+      };
+
+      return (
+        <div>
+          <input
+            type="text"
+            value={newTask}
+            onChange={(e) => setNewTask(e.target.value)}
+          />
+          <button onClick={handleAddTask}>Add Task</button>
+          <ul>
+            {todos.map(todo => (
+              <li key={todo.id}>
+                <span
+                  style={{ textDecoration: todo.completed ? 'line-through' : 'none' }}
+                  onClick={() => handleToggleComplete(todo.id)}
+                >
+                  {todo.text}
+                </span>
+                <button onClick={() => handleDeleteTask(todo.id)}>Delete</button>
+              </li>
+            ))}
+          </ul>
+        </div>
+      );
+    }
+
+    export default TodoList;
+    ```
+
+2.  **Question:** Create a React component that fetches data from an API and displays it in a list. Handle loading and error states.
+    ```jsx
+    import React, { useState, useEffect } from 'react';
+
+    function DataList() {
+      const [data, setData] = useState([]);
+      const [loading, setLoading] = useState(true);
+      const [error, setError] = useState(null);
+
+      useEffect(() => {
+        fetch('[https://jsonplaceholder.typicode.com/posts](https://jsonplaceholder.typicode.com/posts)') // Example API
+          .then(response => {
+            if (!response.ok) {
+              throw new Error('Network response was not ok');
+            }
+            return response.json();
+          })
+          .then(jsonData => {
+            setData(jsonData);
+            setLoading(false);
+          })
+          .catch(err => {
+            setError(err);
+            setLoading(false);
+          });
+      }, []);
+
+      if (loading) return <p>Loading...</p>;
+      if (error) return <p>Error: {error.message}</p>;
+
+      return (
+        <ul>
+          {data.map(item => (
+            <li key={item.id}>{item.title}</li>
+          ))}
+        </ul>
+      );
+    }
+
+    export default DataList;
+    ```
+
+**Node.js:**
+
+3.  **Question:** Write a Node.js API endpoint that accepts a POST request with JSON data and saves it to a file.
+    ```javascript
+    const http = require('http');
+    const fs = require('fs').promises;
+
+    const server = http.createServer(async (req, res) => {
+      if (req.method === 'POST' && req.url === '/save') {
+        let body = '';
+        req.on('data', chunk => {
+          body += chunk.toString();
+        });
+        req.on('end', async () => {
+          try {
+            const jsonData = JSON.parse(body);
+            await fs.writeFile('data.json', JSON.stringify(jsonData, null, 2));
+            res.writeHead(200, { 'Content-Type': 'application/json' });
+            res.end(JSON.stringify({ message: 'Data saved successfully' }));
+          } catch (error) {
+            res.writeHead(500, { 'Content-Type': 'application/json' });
+            res.end(JSON.stringify({ error: error.message }));
+          }
+        });
+      } else {
+        res.writeHead(404, { 'Content-Type': 'application/json' });
+        res.end(JSON.stringify({ error: 'Not found' }));
+      }
+    });
+
+    server.listen(3000, () => {
+      console.log('Server listening on port 3000');
+    });
+    ```
+
+4.  **Question:** Create a Node.js function that recursively traverses a directory and returns a list of all file paths.
+    ```javascript
+    const fs = require('fs').promises;
+    const path = require('path');
+
+    async function getFilePaths(dirPath, filePaths = []) {
+      const files = await fs.readdir(dirPath);
+      for (const file of files) {
+        const filePath = path.join(dirPath, file);
+        const stats = await fs.stat(filePath);
+        if (stats.isDirectory()) {
+          await getFilePaths(filePath, filePaths);
+        } else {
+          filePaths.push(filePath);
+        }
+      }
+      return filePaths;
+    }
+
+    // Example Usage
+    // getFilePaths('./your-directory').then(paths => console.log(paths));
+    ```
+
+**MongoDB:**
+
+5.  **Question:** Write a Node.js function that connects to a MongoDB database, retrieves all documents from a collection, and returns them as an array.
+    ```javascript
+    const { MongoClient } = require('mongodb');
+
+    async function getDocuments(uri, dbName, collectionName) {
+      const client = new MongoClient(uri);
+      try {
+        await client.connect();
+        const database = client.db(dbName);
+        const collection = database.collection(collectionName);
+        const documents = await collection.find({}).toArray();
+        return documents;
+      } finally {
+        await client.close();
+      }
+    }
+
+    // Example Usage
+    // const uri = 'mongodb://localhost:27017';
+    // getDocuments(uri, 'mydb', 'mycollection').then(docs => console.log(docs));
+    ```
